@@ -1,0 +1,193 @@
+
+```
+fixit
+├─ .editorconfig
+├─ app
+│  ├─ Filament
+│  │  └─ Resources
+│  │     ├─ Aduans
+│  │     │  ├─ AduanResource.php
+│  │     │  ├─ Pages
+│  │     │  │  ├─ CreateAduan.php
+│  │     │  │  ├─ EditAduan.php
+│  │     │  │  └─ ListAduans.php
+│  │     │  ├─ Schemas
+│  │     │  │  └─ AduanForm.php
+│  │     │  └─ Tables
+│  │     │     └─ AduansTable.php
+│  │     ├─ Ratings
+│  │     │  ├─ Pages
+│  │     │  │  ├─ CreateRating.php
+│  │     │  │  ├─ EditRating.php
+│  │     │  │  └─ ListRatings.php
+│  │     │  ├─ RatingResource.php
+│  │     │  ├─ Schemas
+│  │     │  │  └─ RatingForm.php
+│  │     │  └─ Tables
+│  │     │     └─ RatingsTable.php
+│  │     ├─ Users
+│  │     │  ├─ Pages
+│  │     │  │  ├─ CreateUser.php
+│  │     │  │  ├─ EditUser.php
+│  │     │  │  ├─ ListUsers.php
+│  │     │  │  └─ ViewUser.php
+│  │     │  ├─ Schemas
+│  │     │  │  ├─ UserForm.php
+│  │     │  │  └─ UserInfolist.php
+│  │     │  ├─ Tables
+│  │     │  │  └─ UsersTable.php
+│  │     │  └─ UserResource.php
+│  │     └─ Zonas
+│  │        ├─ Pages
+│  │        │  ├─ CreateZona.php
+│  │        │  ├─ EditZona.php
+│  │        │  └─ ListZonas.php
+│  │        ├─ Schemas
+│  │        │  └─ ZonaForm.php
+│  │        ├─ Tables
+│  │        │  └─ ZonasTable.php
+│  │        └─ ZonaResource.php
+│  ├─ Http
+│  │  └─ Controllers
+│  │     ├─ AduanController.php
+│  │     ├─ AuthController.php
+│  │     ├─ Controller.php
+│  │     └─ DashboardController.php
+│  ├─ Models
+│  │  ├─ Aduan.php
+│  │  ├─ Rating.php
+│  │  ├─ User.php
+│  │  └─ Zona.php
+│  └─ Providers
+│     ├─ AppServiceProvider.php
+│     └─ Filament
+│        └─ AdminPanelProvider.php
+├─ artisan
+├─ bootstrap
+│  ├─ app.php
+│  ├─ cache
+│  │  ├─ packages.php
+│  │  └─ services.php
+│  └─ providers.php
+├─ composer.json
+├─ composer.lock
+├─ config
+│  ├─ app.php
+│  ├─ auth.php
+│  ├─ cache.php
+│  ├─ database.php
+│  ├─ filesystems.php
+│  ├─ logging.php
+│  ├─ mail.php
+│  ├─ queue.php
+│  ├─ services.php
+│  └─ session.php
+├─ database
+│  ├─ database.sqlite
+│  ├─ factories
+│  │  └─ UserFactory.php
+│  ├─ migrations
+│  │  ├─ 0001_01_01_000000_create_users_table.php
+│  │  ├─ 0001_01_01_000001_create_cache_table.php
+│  │  ├─ 0001_01_01_000002_create_jobs_table.php
+│  │  ├─ 2025_11_25_071754_create_zonas_table.php
+│  │  ├─ 2025_11_25_071830_create_aduans_table.php
+│  │  ├─ 2025_11_25_071920_create_ratings_table.php
+│  │  ├─ 2025_11_26_074543_fasilitas.php
+│  │  └─ 2025_11_26_074819_create_fasilitas_table.php
+│  └─ seeders
+│     ├─ DatabaseSeeder.php
+│     └─ ZonaSeeder.php
+├─ package.json
+├─ phpunit.xml
+├─ public
+│  ├─ .htaccess
+│  ├─ favicon.ico
+│  ├─ fonts
+│  │  ├─ BrigendsExpanded.otf
+│  │  └─ GraphiteDEMO.otf
+│  ├─ images
+│  │  └─ lt2.svg
+│  ├─ index.php
+│  └─ robots.txt
+├─ resources
+│  ├─ css
+│  │  └─ app.css
+│  ├─ js
+│  │  ├─ app.js
+│  │  └─ bootstrap.js
+│  └─ views
+│     ├─ aduan.blade.php
+│     ├─ jelajah.blade.php
+│     ├─ login.blade.php
+│     └─ svg
+│        └─ lantai2.blade.php
+├─ routes
+│  ├─ console.php
+│  └─ web.php
+├─ storage
+│  ├─ app
+│  │  ├─ private
+│  │  └─ public
+│  ├─ framework
+│  │  ├─ cache
+│  │  │  └─ data
+│  │  ├─ sessions
+│  │  ├─ testing
+│  │  └─ views
+│  │     ├─ 0390520826f8cfa66342489dc1063802.php
+│  │     ├─ 05332129d3959bee1d98e830a7582f9f.php
+│  │     ├─ 0af9a389a1bad915b0b35c50b85f719a.php
+│  │     ├─ 166072322f8f6949c63de72bdbc3c7d8.php
+│  │     ├─ 1dbc11bed0c8b65021089afc6b779597.php
+│  │     ├─ 24a083b9fe2cd98617dcf80abfedd782.php
+│  │     ├─ 26667023823e7015627b00d9436b0b35.php
+│  │     ├─ 2a001be28460e18584dbc24682f3099b.php
+│  │     ├─ 2f2233559237f0886076f31dd25228bf.php
+│  │     ├─ 3997bcdba5d7d1cf126fe4629e54e1be.php
+│  │     ├─ 4729b9b8fd30f233a8c651298d4d814d.php
+│  │     ├─ 4a8d48baa960971d6ba446ceed586b90.php
+│  │     ├─ 4ef8f80fa17f0d2c68ca7cfdc8a3f4e4.php
+│  │     ├─ 4ff4a2978592be91191ad1e4c1917ea6.php
+│  │     ├─ 5226022f8b25ec43e7182c95d8cab322.php
+│  │     ├─ 6e7a1d91e35f23efe1713435d24ccfaa.php
+│  │     ├─ 712de82258f50a0e51b3fdbd2417ee84.php
+│  │     ├─ 7853ddc04223fc90dcd3b404cc56ef0e.php
+│  │     ├─ 82b27b001e97adef55381d3ba5ee4c5b.php
+│  │     ├─ 82b5794ee25a8bd7a202c79cee8721d4.php
+│  │     ├─ 8312085a71a132d0252f5333c7b4caf5.php
+│  │     ├─ 839a368670ae6508852596bf71116591.php
+│  │     ├─ 8d0775f7b4745954074de53c7135cb84.php
+│  │     ├─ 93d1a7ee4b8120ca01bc62c7ab0a4f51.php
+│  │     ├─ 9abd8677a2ef8415ff50872fe776ca9e.php
+│  │     ├─ a073e57a983514b17daf8ade3043cb85.php
+│  │     ├─ a7555de5f8eacf34fcd73a331b5c1c6d.php
+│  │     ├─ a9093d9c45d018d183bbccc485d3d6ec.php
+│  │     ├─ b2e9fe0bceb4ea53109a54d016852c67.php
+│  │     ├─ b90287ae2e5a99ddf2f46c90c54c1068.php
+│  │     ├─ bf3b594935886c043ca544f8c0b41300.php
+│  │     ├─ c036ae21bdde05b6108e06849ef53ffb.php
+│  │     ├─ c3294cf9b39cbec8affaa2106d4e6b88.php
+│  │     ├─ ca7f971d694d825046865b6dbffc7286.php
+│  │     ├─ ce4a2caeeee1fd82e1c4070b05ee48e6.php
+│  │     ├─ cf16a4c892799785f853a694b7645844.php
+│  │     ├─ d0c433b4ab691da80c4df2408a814ef8.php
+│  │     ├─ d1fd7bff27d9fa05c6da04cfb79e4262.php
+│  │     ├─ e6e4223af915483b502119aeef971938.php
+│  │     ├─ e8e323322e8d6ae69b01b4a4f59e0a4f.php
+│  │     ├─ eb3924b7c2a2ecc0e1cae29934e81bff.php
+│  │     ├─ ec0903b221c0d9322f67c3958b883ffd.php
+│  │     ├─ ecd5eefb5923714a816d0bfb49000fdc.php
+│  │     ├─ edc3da8ef9d630f1713811f39bd54429.php
+│  │     ├─ f3aa044dd201ccf89a4c24de8ed75881.php
+│  │     └─ f79118139809c48cb6205b2ca6d9e077.php
+│  └─ logs
+├─ tests
+│  ├─ Feature
+│  │  └─ ExampleTest.php
+│  ├─ TestCase.php
+│  └─ Unit
+│     └─ ExampleTest.php
+└─ vite.config.js
+
+```
