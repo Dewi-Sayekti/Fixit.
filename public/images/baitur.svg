@@ -1,0 +1,22 @@
+<svg width="739" height="853" viewBox="0 0 739 853" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="baitur">
+<g id="kamarbesar" class="area kamar besar" data-id="1"><path id="kamar besar" d="M738 278V851.938L553 830.056V278H738Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="parkirspace" class="area jamaah pria" data-id="2"><path id="parkir space" d="M552 153.333V277H193V42.9346L192.439 43.0039L136 49.9346V11.8975L184.956 0.523438L552 153.333Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="jamaah pria" class="area jamaah pria" data-id="3"><path id="jamaah pria" d="M460 350V758H236V586.5H193V563.5H236V500H193V350H460Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="gedungsamping" class="area gedung samping" data-id="4"><path id="gedung samping" d="M192 350V758H65.4268L0.585938 350H192Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="asramaparkirspace" class="area asrama parkir space" data-id="5"><path id="asrama parkir space" d="M135.5 350H2V38.9121L135.5 13.1055V350Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="serambikanan" class="area serambi kanan" data-id="6"><rect id="serambi kanan" x="193" y="278" width="359" height="71" fill="#D9D9D9" stroke="black"/></g>
+<g id="jamaah perempuan" class="area jamaah perempuan" data-id="7"><path id="jamaah perempuan" d="M552 351V761H461V351H552Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="serambikiri" class="area serambi kiri" data-id="8"><rect id="serambi kiri" x="193" y="759" width="359" height="71" fill="#D9D9D9" stroke="black"/></g>
+<g id="kamarmandiwanita" class="area kamar mandi wanita" data-id="9"><path id="kamar mandi wanita" d="M192 204V349H136V204H192Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="kamarmandipria" class="area kamar mandi pria" data-id="10"><path id="kamar mandi pria" d="M192 203H136V49.2305L192 43.0576V203Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="imamspace" class="area imam space" data-id="11"><rect id="imam space" x="193" y="501" width="42" height="62" fill="#D9D9D9" stroke="black"/></g>
+<g id="ambulanceport" class="area ambulance port" data-id="12"><path id="ambulance port" d="M135 117H93.0195L94.9854 64.8955L135 55.1357V117Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="ruangmuadzin" class="area ruang muadzin" data-id="13"><rect id="ruang muadzin" x="193" y="587" width="42" height="170" fill="#D9D9D9" stroke="black"/></g>
+<g id="kamarmandisantri" class="area kamar mandi santri" data-id="14"><rect id="kamar mandi santri" x="65" y="587" width="56" height="170" fill="#D9D9D9" stroke="black"/></g>
+<g id="kamar2" class="area kamar 2" data-id="15"><rect id="kamar 2" x="136" y="507" width="56" height="117" fill="#D9D9D9" stroke="black"/></g>
+<g id="kamar3" class="area kamar 3" data-id="16"><rect id="kamar 3" x="136" y="372" width="56" height="117" fill="#D9D9D9" stroke="black"/></g>
+<g id="kamarustad" class="area kamar ustad" data-id="17"><path id="kamar ustad" d="M118 351V407H9.42969L1.0791 351H118Z" fill="#D9D9D9" stroke="black"/></g>
+<g id="kamar1" class="area kamar 1" data-id="18"><rect id="kamar 1" x="136" y="640" width="56" height="117" fill="#D9D9D9" stroke="black"/></g>
+</g>
+</svg>
