@@ -1,50 +1,56 @@
 <?php
 
-namespace App\Filament\Resources\Aduans;
+namespace App\Filament\Resources\Aduans\Tables;
 
-use App\Filament\Resources\Aduans\Pages\CreateAduan;
-use App\Filament\Resources\Aduans\Pages\EditAduan;
-use App\Filament\Resources\Aduans\Pages\ListAduans;
-use App\Filament\Resources\Aduans\Schemas\AduanForm;
-use App\Filament\Resources\Aduans\Tables\AduansTable;
-use App\Models\Aduan;
-use BackedEnum;
-use Filament\Resources\Resource;
-use Filament\Schemas\Schema;
-use Filament\Support\Icons\Heroicon;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 
-class AduanResource extends Resource
+class AduansTable
 {
-    protected static ?string $model = Aduan::class;
-
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
-    protected static ?string $recordTitleAttribute = 'keterangan';
-
-    public static function form(Schema $schema): Schema
+    public static function configure(Table $table): Table
     {
-        return AduanForm::configure($schema);
-    }
-
-    public static function table(Table $table): Table
-    {
-        return AduansTable::configure($table);
-    }
-
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
-    }
-
-    public static function getPages(): array
-    {
-        return [
-            'index' => ListAduans::route('/'),
-            'create' => CreateAduan::route('/create'),
-            'edit' => EditAduan::route('/{record}/edit'),
-        ];
+        return $table
+            ->columns([
+                TextColumn::make('id')->label('ID')->sortable(),
+                TextColumn::make('user.name')->label('Pengadu')->sortable(),
+                TextColumn::make('zona.nama')->label('Zona')->sortable(),
+                TextColumn::make('keterangan')->label('Keterangan')->limit(50),
+                TextColumn::make('status')
+                    ->label('Status')
+                    ->badge()
+                    ->color(fn (string $state): string => match ($state) {
+                        'diadukan' => 'gray',
+                        'diproses' => 'warning',
+                        'perbaikan selesai' => 'success',
+                    })
+                    ->formatStateUsing(fn (string $state): string => match ($state) {
+                        'diadukan' => 'Diadukan',
+                        'diproses' => 'Sedang Diproses',
+                        'perbaikan selesai' => 'Selesai',
+                    }),
+                TextColumn::make('created_at')->label('Dibuat')->dateTime()->sortable(),
+            ])
+            ->filters([
+                SelectFilter::make('status')
+                    ->label('Filter Status')
+                    ->options([
+                        'diadukan' => 'Diadukan',
+                        'diproses' => 'Sedang Diproses',
+                        'perbaikan selesai' => 'Selesai',
+                    ])
+                    ->placeholder('Pilih Status'),
+            ])
+            ->recordActions([
+                EditAction::make(),
+            ])
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
+                ]),
+            ]);
     }
 }
